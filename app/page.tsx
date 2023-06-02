@@ -15,20 +15,20 @@ const buttons = [
   },
   {
     id: 3,
-    title: "Code & Coffee global network",
+    title: "Code & Coffee Chapters",
     link: "/chapters",
     color: "bg-rose-600",
   },
   {
     id: 4,
     title: "Join our Discord",
-    link: "/discord",
+    link: "https://www.codeandcoffee.chat",
     color: "bg-purple-600",
   },
   {
     id: 5,
-    title: "Photos from our events",
-    link: "/events",
+    title: "About",
+    link: "/about",
     color: "bg-blue-500",
   },
 ];
@@ -37,14 +37,8 @@ export default function Home() {
   return (
     <main className="mx-auto max-w-7xl px-4">
       <div className="my-2 h-full flex flex-col justify-evenly">
-        {buttons.map((button) => (
-          <div className="my-2" key={button.id}>
-            <MainButton
-              title={button.title}
-              link={button.link}
-              color={button.color}
-            />
-          </div>
+        {buttons.map(({ id, link, color, title }) => (
+          <MainButton key={id} title={title} link={link} color={color} />
         ))}
       </div>
     </main>
