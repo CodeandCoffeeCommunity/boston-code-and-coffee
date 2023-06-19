@@ -1,7 +1,7 @@
 import Logo from "./Logo";
 import Link from "next/link";
 
-export default function Nav() {
+export default function NavBar() {
   return (
     <nav className="mx-auto max-w-7xl px-5 mb-9">
       <Link href={"/"}>
