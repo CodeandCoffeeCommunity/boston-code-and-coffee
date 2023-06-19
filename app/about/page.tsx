@@ -1,5 +1,5 @@
 import "@/app/globals.css";
-import Wrapper from "@/components/layout/wrapper";
+import Wrapper from "@/components/layout/Wrapper";
 
 const data = [
   { id: 0, name: 'Organizers', value: '3'}, 
