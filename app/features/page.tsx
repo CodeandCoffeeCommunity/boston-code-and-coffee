@@ -1,7 +1,7 @@
 // require("@tailwindcss/forms");
 import "@/app/globals.css";
 // import { useState } from "react";
-import Wrapper from "@/components/layout/wrapper";
+import Wrapper from "@/components/layout/Wrapper";
 
 
 export default function Example() {

@@ -11,16 +11,6 @@ export default function MainButton({
 }) {
   return (
     <div className="my-2">
-      {link.startsWith("http") ? (
-        <a
-          href={link}
-          className={`${color} flex items-center justify-center inline-block rounded-full w-full h-16 px-4 py-2.5 text-xl font-semibold text-white shadow-sm`}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          {title}
-        </a>
-      ) : (
         <Link href={link}>
           <button
             type="button"
@@ -29,7 +19,6 @@ export default function MainButton({
             {title}
           </button>
         </Link>
-      )}
     </div>
   );
 }
