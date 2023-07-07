@@ -10,7 +10,7 @@ export default function MainButton({
   color: string;
 }) {
   return (
-    <div className="my-2">
+    <div className="my-2 min-w-full w-full">
         <Link href={link}>
           <button
             type="button"

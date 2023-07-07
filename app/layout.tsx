@@ -15,8 +15,8 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>
+    <html lang="en" className='flex flex-col items-center justify-center'>
+      <body className="sm:flex flex-col items-center justify-center w-full h-full md:max-w-[576px] lg:max-w-[576px]">
         <NavBar />
         {children}
       </body>

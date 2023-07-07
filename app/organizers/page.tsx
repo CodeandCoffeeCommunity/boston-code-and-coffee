@@ -8,19 +8,29 @@ const team = [
     imageUrl:
       "https://res.cloudinary.com/danielkapper-com/image/upload/v1584983915/49256474_10218714097030554_1619941130089005056_o.jpg_szwvwp.jpg",
   },
+  {
+    name: "Brian Towne",
+    role: "Co-Organizer",
+    imageUrl:
+    "https://media.licdn.com/dms/image/C5603AQF4XNgseUCHyQ/profile-displayphoto-shrink_400_400/0/1655003018441?e=1694044800&v=beta&t=PCruuX2t6f9IkQ92e_z-OdSDIR2Qpf5WOuM7eOQ7KbM"
+  },
+  {
+    name: "Anton Shelkovnikov",
+    role: "Co-Organizer",
+    imageUrl:
+    "https://media.licdn.com/dms/image/C4E03AQHKGkWJ9knk4A/profile-displayphoto-shrink_400_400/0/1652227805550?e=1694044800&v=beta&t=FxfNvYBDkdkeTIl2SlBYJK4UWvhcY3GWBrzxbA64hsE"
+  },
 ];
 
 export default function Organizers() {
   return (
 
     <Wrapper title="Team" description="Describe what this is about.">
-
           <ul
-            role="list"
-            className="mx-auto mt-20 grid max-w-2xl grid-cols-2 gap-x-8 gap-y-16 text-center sm:grid-cols-3 md:grid-cols-4 lg:mx-0 lg:max-w-none lg:grid-cols-5 xl:grid-cols-6"
+            className="flex flex-wrap justify-center flex-auto mt-10 text-center"
           >
             {team.map(({name, imageUrl, role}) => (
-              <li key={name}>
+              <li key={name} className="m-4">
                 <img
                   className="mx-auto h-24 w-24 rounded-full"
                   src={imageUrl}

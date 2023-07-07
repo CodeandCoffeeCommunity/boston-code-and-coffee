@@ -8,7 +8,6 @@ export default function Example() {
   // const [agreed, setAgreed] = useState(false);
 
   return (
-
     <Wrapper title="Features" description="Describe what this is about.">
       <form
         action="#"
