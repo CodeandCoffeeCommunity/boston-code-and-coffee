@@ -1,4 +1,4 @@
-import MainButton from "@/components/home/MainButton";
+import Button from "@/components/shared/Button";
 
 const buttons = [
   {
@@ -38,7 +38,7 @@ export default function Home() {
     <main className="mx-auto max-w-7xl px-4 min-w-full">
       <div className="my-2 h-full flex flex-col justify-evenly">
         {buttons.map(({ id, link, color, title }) => (
-          <MainButton key={id} title={title} link={link} color={color} />
+          <Button key={id} title={title} link={link} color={color} />
         ))}
       </div>
     </main>
