@@ -25,7 +25,7 @@ const team = [
 export default function Organizers() {
   return (
 
-    <Wrapper title="Team" description="Describe what this is about.">
+    <Wrapper title="Team" description="Meet our Organizers!">
           <ul
             className="flex flex-wrap justify-center flex-auto mt-10 text-center"
           >
