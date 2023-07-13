@@ -35,7 +35,7 @@ const buttons = [
 
 export default function Home() {
   return (
-    <main className="mx-auto max-w-7xl px-4">
+    <main className="mx-auto max-w-7xl px-4 min-w-full">
       <div className="my-2 h-full flex flex-col justify-evenly">
         {buttons.map(({ id, link, color, title }) => (
           <Button key={id} title={title} link={link} color={color} />
