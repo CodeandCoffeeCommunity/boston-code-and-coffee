@@ -16,7 +16,7 @@ const buttons = [
   {
     id: 3,
     title: "Code & Coffee Chapters",
-    link: "/chapters",
+    link: "https://codeandcoffee.org/",
     color: "bg-rose-600",
   },
   {
