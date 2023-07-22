@@ -5,7 +5,7 @@ on:
     branches:
       - main
 jobs:
-  build:
+  changelog-check:
     name: Check Actions
     runs-on: ubuntu-latest
     steps:
@@ -18,3 +18,16 @@ jobs:
           checkNotification: Simple # default `Detailed`
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  build:
+    name: Build Node.js Application
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [18.x]
+    steps:
+      - uses: actions/checkout@v3
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+      - run: npm run build --if-present
