@@ -24,6 +24,18 @@ N/A
 
 ---
 
+## 1.0.1 - 2023-07-22
+ 
+### Added
+- Add github action to check for CHANGELOG.md update
+
+### Updated
+N/A
+### Removed
+N/A
+
+---
+
 ## [1.0.0] - 2023-07-14
  
 ### Added
