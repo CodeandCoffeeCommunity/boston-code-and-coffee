@@ -24,6 +24,20 @@ N/A
 
 ---
 
+## 1.0.2 - 2023-07-22
+ 
+### Added
+N/A
+
+### Updated
+- Update workflows/mail.yml to check for failed app build
+- Update app/(routes)/features/page.tsx to fix unescaped quotes
+
+### Removed
+N/A
+
+---
+
 ## 1.0.1 - 2023-07-22
  
 ### Added

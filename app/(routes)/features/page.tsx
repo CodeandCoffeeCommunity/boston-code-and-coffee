@@ -12,19 +12,19 @@ export default function FeatureSignUp() {
       </h1>
 
       <p className="mb-4 text-gray-900">
-        We believe that everyone has something unique and valuable to share, which is why we encourage all members to host a feature at our events! Whether it's a new hobby you've picked up, a personal passion project, or just something you find interesting, we want to hear about it.
+        {"We believe that everyone has something unique and valuable to share, which is why we encourage all members to host a feature at our events! Whether it's a new hobby you've picked up, a personal passion project, or just something you find interesting, we want to hear about it."}
       </p>
 
       <p className="mb-4 text-gray-900">
-        Don't worry if you're not an expert - we value personal experiences and engaging storytelling. We want to hear about your perspective on the matter!
+        {"Don't worry if you're not an expert - we value personal experiences and engaging storytelling. We want to hear about your perspective on the matter!"}
       </p>
 
       <p className="mb-4 text-gray-900">
-        If you want to partner with someone else to make your feature even more special, that's great too!
+        {"If you want to partner with someone else to make your feature even more special, that's great too!"}
       </p>
 
       <p className="mb-12 text-gray-900">
-        We can't wait to see what kind of features our members come up with.
+        {"We can't wait to see what kind of features our members come up with."}
       </p>
 
       <Button 
