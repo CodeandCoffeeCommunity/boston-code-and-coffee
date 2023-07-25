@@ -16,7 +16,8 @@ export default async function PastEvents() {
     <Wrapper description='Check out our Previous Events.'>
       <dl className='mt-16 grid grid-cols-1 gap-0.5 overflow-hidden rounded-2xl text-center sm:grid-cols-2 lg:grid-cols-4'>
         {pastEvents.map((meetupEvent) => (
-          <Link 
+          <Link
+            key={meetupEvent.id}
             href='/pastEvents/[eventId]/photoAlbum'
             as={`/pastEvents/${meetupEvent.id}/photoAlbum?photoCount=${meetupEvent.photoAlbum?.photoCount}`}
             >

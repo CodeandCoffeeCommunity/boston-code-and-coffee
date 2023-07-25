@@ -3,7 +3,7 @@ import { NextPageContext } from 'next';
 import Wrapper from '@/components/layout/Wrapper';
 import { getEventPhotoAlbum } from '@/app/service/meetup/MeetupService';
 
-export default async function PastEvents(context: NextPageContext) {
+export default async function PastEvents(context: { params: any; searchParams: any; }) {
   const { params, searchParams } = context;
   const eventId: string | null = params.eventId || null;
   const photoCount: string | null = searchParams.photoCount || null;
