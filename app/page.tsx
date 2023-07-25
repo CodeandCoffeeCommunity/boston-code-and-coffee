@@ -1,8 +1,8 @@
 import Button from "@/components/shared/Button";
 import Link from "next/link";
 import Image from "next/image";
-import Discord from "./Logos/Discord.svg";
-import LinkedIn from "./Logos/LinkedIn.svg";
+import Discord from "@/assets/images/Discord.svg";
+import LinkedIn from "@/assets/images/LinkedIn.svg";
 
 const buttons = [
   {
