@@ -27,6 +27,12 @@ const buttons = [
   },
   {
     id: 5,
+    title: "Photos from past events",
+    link: "/pastEvents",
+    color: "bg-cyan-500",
+  },
+  {
+    id: 6,
     title: "About",
     link: "/about",
     color: "bg-blue-500",
