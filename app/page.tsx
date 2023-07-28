@@ -23,8 +23,14 @@ const buttons = [
     link: "https://codeandcoffee.org/",
     color: "bg-rose-600",
   },
-  {    
+  {
     id: 4,
+    title: "Photos from past events",
+    link: "/pastEvents",
+    color: "bg-cyan-500",
+  },
+  {
+    id: 5,
     title: "About",
     link: "/about",
     color: "bg-blue-500",

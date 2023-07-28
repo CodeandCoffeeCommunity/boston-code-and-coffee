@@ -22,6 +22,25 @@ N/A
 
 -->
 ---
+## 1.0.4 - 2023-07-28
+ 
+### Added
+Add RequestUtil
+Add MeetupService
+Add query fragments
+Add domain types
+Add config constants
+Add 'Photos from past events' page
+Add event photo album sub-page
+Fix build errors
+
+### Updated
+N/A
+
+### Removed
+N/A
+
+---
 
 ## 1.0.3 - 2023-07-25
  
@@ -33,8 +52,6 @@ Discord and LinkedIn logos in the assets/images folder
 
 ### Removed
 N/A
-
----
 
 ---
 
