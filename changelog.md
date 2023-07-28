@@ -21,6 +21,20 @@ N/A
 N/A
 
 -->
+---
+
+## 1.0.3 - 2023-07-25
+ 
+### Added
+Discord and LinkedIn logos in the assets/images folder
+
+### Updated
+- Updated the page.tsx file to add Social media buttons
+
+### Removed
+N/A
+
+---
 
 ---
 
