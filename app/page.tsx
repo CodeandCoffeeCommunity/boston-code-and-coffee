@@ -33,7 +33,7 @@ const buttons = [
     id: 5,
     title: "About",
     link: "/about",
-    color: "bg-blue-500",
+    color: "bg-[#EA891D]",
   },
 ];
 
