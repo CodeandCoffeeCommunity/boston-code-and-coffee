@@ -5,6 +5,7 @@ import { MeetupEvent } from '@/app/types/domain/MeetupEvent';
 
 import GroupPastEventsFragment from './graphql/fragments/GroupPastEventsFragment';
 import EventPhotoAlbumFragment from './graphql/fragments/EventPhotoAlbumFragment';
+import GroupUpcomingEventsFragment from './graphql/fragments/GroupUpcomingEventsFragment';
 
 const requestOptions: RequestOptions = {
   url: `${configuration.MEETUP_API_BASE_URL}/gql`,
@@ -45,7 +46,7 @@ export const getGroupPastEvents = async (groupUrlName: string): Promise<MeetupEv
     response = await request<GroupPastEventsQueryResponse>({
       ...requestOptions,
       body: { query }
-    });
+    }) as GroupPastEventsQueryResponse;
   } catch (error) {
     return [];
   }
@@ -102,10 +103,59 @@ export const getEventPhotoAlbum = async (eventId: string, photoCount: number): P
     response = await request<GroupPastEventsQueryResponse>({
       ...requestOptions,
       body: { query, variables }
-    });
+    }) as GroupPastEventsQueryResponse;
   } catch (error) {
     return null;
   }
 
   return response.data.eventPhotoAlbum as MeetupEvent;
+}
+
+/**
+ * Get list of upcoming Meetup events by group name
+ * 
+ * @param groupUrlNames the list of Meetup group url names (e.g. ['boston-code-and-coffee', 'new-york-code-coffee'])
+ * @returns list of upcoming Meetup events for the given Meetup group names
+ */
+export const getGroupsUpcomingEvents = async (groupUrlNames: string[]): Promise<MeetupEvent[]> => {
+  let query = 'query {';
+  for (const i in groupUrlNames) {
+    query += `
+      result${i}:groupByUrlname(urlname: "${groupUrlNames[i]}") { 
+        ...GroupUpcomingEventsFragment
+      }`;
+  }
+  query += '} ' + GroupUpcomingEventsFragment;
+
+  type GroupUpcomingEventsQueryResponse = {
+    data: Record<string,
+      {
+        id: number;
+        upcomingEvents: {
+          edges: Array<{ node: MeetupEvent }>;
+        };
+      } | null
+    >;
+  };
+
+  let response: GroupUpcomingEventsQueryResponse;
+  try {
+    response = await request<GroupUpcomingEventsQueryResponse>({
+      ...requestOptions,
+      body: { query }
+    }) as GroupUpcomingEventsQueryResponse;
+  } catch (error) {
+    return [];
+  }
+
+  const result: MeetupEvent[] = [];
+  for (const group of Object.values(response.data)) {
+    if (group) {
+      for (const event of group.upcomingEvents.edges) {
+        result.push(event.node);
+      }
+    }
+  }
+
+  return result;
 }
