@@ -1,12 +1,14 @@
 export type RequestOptions = {
   name: string;
   url: string;
+  responseType?: 'json' | 'arrayBuffer';
   body?: any;
   method: 'GET' | 'POST' | 'PUT' | 'DELETE';
   headers?: Record<string, string>;
 };
 
-export async function request<T>(options: RequestOptions): Promise<Response & T> {
+export async function request<T>(options: RequestOptions): Promise<Response & T | ArrayBuffer> {
+  const { responseType = 'json' } = options;
   let response: Response & T;
   
   try {
@@ -23,5 +25,9 @@ export async function request<T>(options: RequestOptions): Promise<Response & T>
     throw response;
   }
 
-  return await response.json();
+  if (responseType === 'arrayBuffer') {
+    return await response.arrayBuffer() as ArrayBuffer;
+  }
+
+  return await response.json() as Response & T;
 }

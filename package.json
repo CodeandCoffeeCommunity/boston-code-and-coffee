@@ -1,6 +1,6 @@
 {
   "name": "boston-code-and-coffee",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "private": true,
   "engines": {
     "node": ">=16.8.0"

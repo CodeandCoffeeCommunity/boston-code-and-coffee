@@ -21,6 +21,30 @@ N/A
 N/A
 
 -->
+
+---
+
+## 1.0.5 - 2023-08-03
+ 
+### Added
+- Add UpcomingMeetupEvent component
+- Add DateTime utils
+- Add CodeCoffeeChapter
+- Add GroupUpcomingEventsFragment
+- Add SettingsService
+- Add Chapters page
+
+### Updated
+- Update RequestUtil
+- Update MeetupGroup
+- Update MeetupEvent
+- Update Configuration
+- Update MeetupService
+- Catch error response in SettingsService
+
+### Removed
+N/A
+
 ---
 ## 1.0.4 - 2023-07-28
  
