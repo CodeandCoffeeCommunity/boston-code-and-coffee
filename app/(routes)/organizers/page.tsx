@@ -152,13 +152,39 @@ const team = [
 ];
 
 export default function Organizers() {
-  return (
+  const organizers = team.filter(person => person.role === 'Co-Organizer');
+  const volunteers = team.filter(person => person.role !== 'Co-Organizer');
 
-    <Wrapper title="Team" description="Meet our Organizers!">
+  return (
+    <Wrapper title="" description="">
+      <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl "> Meet Our Organizers!</h2>
       <ul
         className="grid grid-cols-2 md:grid-cols-3 gap-2 justify-center flex-auto mt-10 text-center"
       >
-        {team.map(({ name, imageUrl, team, role, linkedinUrl }) => (
+        {organizers.map(({ name, imageUrl, team, role, linkedinUrl }) => (
+          <li key={name} className="m-4">
+            <img
+              className="mx-auto h-24 w-24 rounded-full"
+              src={imageUrl}
+              alt=""
+            />
+            <h3 className="mt-6 text-base font-semibold leading-7 tracking-tight text-gray-900">
+              <a href={linkedinUrl}>{name}</a>
+            </h3>
+            <p className="text-sm leading-6 text-gray-600">{role}</p>
+            {/* <p className="text-sm leading-6 text-gray-600">{teamLead}</p> */}
+            <p className="text-sm leading-6 text-gray-600">{team}</p>
+          </li>
+        ))}
+      </ul>
+
+
+
+      <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl "> Meet Our Volunteers!</h2>
+      <ul
+        className="grid grid-cols-2 md:grid-cols-3 gap-2 justify-center flex-auto mt-10 text-center"
+      >
+        {volunteers.map(({ name, imageUrl, team, role, linkedinUrl }) => (
           <li key={name} className="m-4">
             <img
               className="mx-auto h-24 w-24 rounded-full"
