@@ -28,6 +28,7 @@ N/A
  
 ### Added
 - Add more team members to team array in organizers/page.tsx
+- Add links for LinkedIn profiles
 
 ### Updated
 - Update ul className to grid
