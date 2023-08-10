@@ -100,7 +100,6 @@ const team = [
     imageUrl:
       "https://media.licdn.com/dms/image/C4E03AQG7_VeBySraNQ/profile-displayphoto-shrink_200_200/0/1661273766047?e=1695254400&v=beta&t=udWGSp3_7cOzvYqcelI1-yOPAom2MaO-20B591E9qeI"
   },
-
   {
     name: "Sergio Terrero",
     role: "Volunteer",
@@ -163,13 +162,15 @@ export default function Organizers() {
       >
         {organizers.map(({ name, imageUrl, team, role, linkedinUrl }) => (
           <li key={name} className="m-4">
-            <img
-              className="mx-auto h-24 w-24 rounded-full"
-              src={imageUrl}
-              alt=""
-            />
+            <a href={linkedinUrl}>
+              <img
+                className="mx-auto h-24 w-24 rounded-full"
+                src={imageUrl}
+                alt={name}
+              />
+            </a>
             <h3 className="mt-6 text-base font-semibold leading-7 tracking-tight text-gray-900">
-              <a href={linkedinUrl}>{name}</a>
+              {name}
             </h3>
             <p className="text-sm leading-6 text-gray-600">{role}</p>
             {/* <p className="text-sm leading-6 text-gray-600">{teamLead}</p> */}
@@ -186,13 +187,15 @@ export default function Organizers() {
       >
         {volunteers.map(({ name, imageUrl, team, role, linkedinUrl }) => (
           <li key={name} className="m-4">
-            <img
-              className="mx-auto h-24 w-24 rounded-full"
-              src={imageUrl}
-              alt=""
-            />
+            <a href={linkedinUrl}>
+              <img
+                className="mx-auto h-24 w-24 rounded-full"
+                src={imageUrl}
+                alt={name}
+              />
+            </a>
             <h3 className="mt-6 text-base font-semibold leading-7 tracking-tight text-gray-900">
-              <a href={linkedinUrl}>{name}</a>
+              {name}
             </h3>
             <p className="text-sm leading-6 text-gray-600">{role}</p>
             {/* <p className="text-sm leading-6 text-gray-600">{teamLead}</p> */}
