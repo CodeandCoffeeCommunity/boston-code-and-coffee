@@ -10,9 +10,9 @@ export default function AboutFaQs() {
         How can I get involved?
       </h5>
         <p>
-          If you wish to volunteer to Boston Code and Coffee lease reach out to us on bostoncodeandcoffee@gmail.com and we will set up an initial call to discuss your participation. 
+          If you wish to volunteer to Boston Code and Coffee please reach out to us on bostoncodeandcoffee@gmail.com and we will set up an initial call to discuss your participation. 
         </p>
-        <p className="py-4">You can also volunteer to host a feature</p>
+        <p className="py-4">You can also volunteer to host a feature.</p>
         <Button
           title={"Feature Sign Up Page"}
           link={"/features"}
@@ -24,7 +24,7 @@ export default function AboutFaQs() {
       </h5>
         <p>
           We’re always looking for venue and coffee sponsors.
-          Send us an email at sponsor@codeandcoffee.org
+          Send us an email at sponsor@codeandcoffee.org.
         </p>
         <h5 className="text-base pt-4 font-bold leading-none tracking-tight text-gray-900">
         I want to report someone in violation of the Code of Conduct. Where can I report?

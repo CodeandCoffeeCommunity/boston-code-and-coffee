@@ -12,14 +12,14 @@ export default function AboutPrincipals() {
         <p>
           We strive for everyone to feel welcomed, valued, and connected.
           We believe in encouraging belonging through conscious diversity and inclusion, 
-          especially amongst underrepresented groups in tech. Check out our <span className="font-bold">staff</span> page!
+          especially amongst underrepresented groups in tech. Check out our <span className="font-bold">organizers</span> page!
         </p>
       <h5 className="text-base pt-4 font-bold leading-none tracking-tight text-gray-900">
         Safety
       </h5>
         <p>
           We believe in building trust and maintaining a secure environment in our community.
-          We take safety seriously and expect all participants to abide by our <Link href={"https://codeandcoffee.org/code-of-conduct"} className="font-bold underline">Code of Conduct</Link>
+          We take safety seriously and expect all participants to abide by our <Link href={"https://codeandcoffee.org/code-of-conduct"} className="font-bold underline">Code of Conduct</Link>.
         </p>
       <h5 className="text-base pt-4 font-bold leading-none tracking-tight text-gray-900">
         Trust

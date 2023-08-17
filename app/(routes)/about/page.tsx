@@ -5,7 +5,7 @@ import Button from "@/components/shared/Button"
 const buttons = [
   {
     id: 1,
-    title: "What is Code and Coffee",
+    title: "What is Code and Coffee?",
     link: "/about/info",
     color: "bg-yellow-400",
   },
