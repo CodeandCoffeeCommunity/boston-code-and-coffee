@@ -6,8 +6,8 @@ export default function RoutesLayout({
   children: React.ReactNode
 }) {
   return (
-  <div>
+  <>
     {children}
     <Footer />
-  </div>
+  </>
 )}
