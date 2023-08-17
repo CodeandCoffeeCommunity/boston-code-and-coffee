@@ -22,6 +22,15 @@ N/A
 
 -->
 ---
+
+### Added
+- Added three subpages to the About Section
+- Added Navigation to the About subpages (links back to About main page)
+### Updated
+- Updated About Main Page to include subpages
+- Updated root layout to use fragment instead of div
+- Change the color of the About button on the home page
+
 ## 1.0.4 - 2023-07-28
  
 ### Added
