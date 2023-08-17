@@ -1,7 +1,7 @@
 import { getGroupPastEvents } from '@/app/service/meetup/MeetupService';
 import { MeetupEvent } from '@/app/types/domain/MeetupEvent';
+import PhotoAlbum from '@/components/PhotoAlbum/PhotoAlbum';
 import Wrapper from '@/components/layout/Wrapper';
-import Link from 'next/link';
 
 const removeWithoutPhotos = (event: MeetupEvent) => event.photoAlbum !== null;
 
@@ -11,10 +11,9 @@ export default async function PastEvents() {
   pastEvents.sort((eventA, eventB) => new Date(eventB.dateTime).getTime() - new Date(eventA.dateTime).getTime());
   // remove without events without photos
   pastEvents = pastEvents.filter(removeWithoutPhotos);
-
   return (
     <Wrapper description='Check out our Previous Events.'>
-      <dl className='mt-16 grid grid-cols-1 gap-0.5 overflow-hidden rounded-2xl text-center sm:grid-cols-2 lg:grid-cols-4'>
+      {/* <dl className='mt-16 grid grid-cols-1 gap-0.5 overflow-hidden rounded-2xl text-center sm:grid-cols-2 lg:grid-cols-4'>
         {pastEvents.map((meetupEvent) => (
           <Link
             key={meetupEvent.id}
@@ -27,7 +26,9 @@ export default async function PastEvents() {
           </div>
           </Link>
         ))}
-      </dl>
+      </dl> */}
+
+      <PhotoAlbum pastEvents={pastEvents}/>
     </Wrapper>
   )
 }
