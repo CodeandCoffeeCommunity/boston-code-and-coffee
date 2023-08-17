@@ -5,14 +5,14 @@ export default function AboutInfo() {
         What is Code and Coffee?
       </h4>
       <p className="pt-4">
-      🧑‍🤝‍🧑🧑‍🤝‍🧑 We’re a Community. Our attendees feel like they’re a part of the group. 
+      🧑‍🤝‍🧑🧑‍🤝‍🧑 We&#39;re a Community. Our attendees feel like they&#39;re a part of the group. 
       This group is not run by a company -- it is ran by a group of individual community members.
       </p>
       <p className="pt-4">
       📈🔍 Of developers. Or for people who work with them or want to become one.
       </p>
       <p className="pt-4">
-      🐣🐓 At Any Level. Whether you’re aspiring, newer, or more experienced.
+      🐣🐓 At Any Level. Whether you&#39;re aspiring, newer, or more experienced.
       </p>
       <p className="pt-4">
       We invite anyone working on software development, especially new devs and folks that work with them. 
@@ -28,7 +28,7 @@ export default function AboutInfo() {
       </p>
 
       <p className="pt-4">
-      🕸️ Networking. Many people come to meet people, that's enough reason on its own.
+      🕸️ Networking. Many people come to meet people, that&#39;s enough reason on its own.
       </p>
 
       <p className="pt-4">
