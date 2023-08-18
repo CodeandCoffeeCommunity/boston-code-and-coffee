@@ -24,6 +24,20 @@ N/A
 
 ---
 
+## 1.0.7 - 2023-08-18
+ 
+### Added
+- Added two new components EventAlbum and Gallery
+- Linked the new components in pastEvents pages
+
+### Updated
+- Updated styles and formatting in app/(routes)/pastEvents/page.tsx according to design spec
+- Updated styles and formatting in app/(routes)/pastEvents/[eventId]/photoAlbum/page.tsx according to design spec
+
+### Removed
+N/A
+
+
 ## 1.0.6 - 2023-08-08
  
 ### Added
