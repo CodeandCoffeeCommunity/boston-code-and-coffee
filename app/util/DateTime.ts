@@ -26,3 +26,17 @@ export const getLocaleTime = (date: Date | string): string => {
   const parsedDate = date instanceof Date ? date : new Date(date);
   return parsedDate.toLocaleTimeString('en-US', { hour: '2-digit', minute:'2-digit', hour12: true });
 }
+
+export const parseDate = (dateString?:String) => {
+  
+  if (dateString === undefined) {
+    return {};
+  }
+
+  let day = dateString.split("-")[2];
+  let month = monthAbbreviations[parseInt(dateString.split("-")[1]) - 1];
+  let year = dateString.split("-")[0];
+
+  return {month, day, year};
+
+}

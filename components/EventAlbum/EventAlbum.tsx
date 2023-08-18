@@ -1,23 +1,5 @@
-import { Inter } from 'next/font/google'
 import Link from 'next/link';
-
-const inter = Inter({ 
-    subsets: ['latin'],
-    weight: ['700'],
-})
-
-
-const parseDate = (dateString:String) => {
-    
-  let monthNames : String[] = ["", "Jan", "Feb", "Mar", "Apr", "May", "June", "July", "Aug", "Sep", "Oct", "Nov", "Dec"];
-
-  let day = dateString.split("-")[2];
-  let month = monthNames[parseInt(dateString.split("-")[1])];
-  let year = dateString.split("-")[0];
-
-  return {month, day, year};
-
-}
+import { parseDate } from '@/app/util/DateTime';
 
 /*
 This photo album component is designed specifically for the Previous events section 
@@ -44,7 +26,7 @@ export default function EventAlbum({ pastEvents }: any) {
                 alt=""
               />
 
-              <h1 className={`absolute text-2xl text-white w-full top-1/2 -translate-y-1/2 ${inter.className}`}>
+              <h1 className={`font-bold absolute text-2xl text-white w-full top-1/2 -translate-y-1/2`}>
                 {`${date.month} ${date.day}, ${date.year}`}
               </h1>              
 

@@ -2,14 +2,8 @@ import { getGroupPastEvents } from '@/app/service/meetup/MeetupService';
 import { MeetupEvent } from '@/app/types/domain/MeetupEvent';
 import EventAlbum from '@/components/EventAlbum/EventAlbum';
 import Wrapper from '@/components/layout/Wrapper';
-import { Inter } from 'next/font/google'
 
 const removeWithoutPhotos = (event: MeetupEvent) => event.photoAlbum !== null;
-
-const inter = Inter({ 
-  subsets: ['latin'],
-  weight: ['700'],
-})
 
 
 export default async function PastEvents() {
@@ -20,7 +14,7 @@ export default async function PastEvents() {
   pastEvents = pastEvents.filter(removeWithoutPhotos);
   return (
     <Wrapper>      
-      <h2 className={`text-2xl pb-8 ${inter.className}`}>Check out our Previous Events</h2>
+      <h2 className={`font-bold text-2xl pb-8`}>Check out our Previous Events</h2>
       <EventAlbum pastEvents={pastEvents}/>
     </Wrapper>
   )

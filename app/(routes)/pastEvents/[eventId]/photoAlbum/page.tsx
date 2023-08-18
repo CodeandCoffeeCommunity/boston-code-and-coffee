@@ -1,27 +1,7 @@
 import Wrapper from '@/components/layout/Wrapper';
 import { getEventPhotoAlbum } from '@/app/service/meetup/MeetupService';
-import { Inter } from 'next/font/google'
 import Gallery from '@/components/Gallery/Gallery';
-
-const inter = Inter({ 
-  subsets: ['latin'],
-  weight: ['700'],
-})
-
-const parseDate = (dateString:String | undefined) => {
-  
-  if (dateString === undefined) {
-    return {};
-  }
-  let monthNames : String[] = ["", "Jan", "Feb", "Mar", "Apr", "May", "June", "July", "Aug", "Sep", "Oct", "Nov", "Dec"];
-
-  let day = dateString.split("-")[2];
-  let month = monthNames[parseInt(dateString.split("-")[1])];
-  let year = dateString.split("-")[0];
-
-  return {month, day, year};
-
-}
+import {parseDate} from '@/app/util/DateTime';
 
 export default async function PastEvents(context: { params: any; searchParams: any; }) {
   
@@ -38,7 +18,7 @@ export default async function PastEvents(context: { params: any; searchParams: a
   
   return (
     <Wrapper>            
-        <h1 className={` ${inter.className} text-xl pb-1`}> {`${date?.month} ${date?.day}, ${date?.year}`} </h1>
+        <h1 className={`font-bold text-xl pb-1`}> {`${date?.month} ${date?.day}, ${date?.year}`} </h1>
         <p className='pb-8 text-base'>{eventPhotoAlbum?.title}</p>      
       <Gallery photoAlbum={eventPhotoAlbum?.photoAlbum}/>
     </Wrapper>
