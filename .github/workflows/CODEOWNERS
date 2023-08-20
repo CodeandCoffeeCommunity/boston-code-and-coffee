@@ -1,0 +1,5 @@
+# Code owners are automatically requested for review when someone opens a pull request that modifies code that they own.
+# A CODEOWNERS file uses a pattern that follows most of the same rules used in gitignore files.
+# For more info, check out https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners
+
+* @dkapper01 @IgorTheFixer @detective-sokka @Antosha9108 @alexpereira
