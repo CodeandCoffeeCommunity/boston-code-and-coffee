@@ -177,7 +177,7 @@ N/A
 
 <!-- LINKS -->
 
-[Unreleased Changes]: https://github.com/CodeandCoffeeCommunity/boston-code-and-coffee/compare/v1.0.0...HEAD
+[Unreleased Changes]: https://github.com/CodeandCoffeeCommunity/boston-code-and-coffee/compare/v1.1.0...HEAD
 
 <!-- Add the links to released versions below and update the Unreleased link above accordingly. -->
 
