@@ -24,6 +24,23 @@ N/A
 
 ---
 
+## [1.1.0] - 2023-08-20
+ 
+### Added
+- [ISSUE-22](https://github.com/CodeandCoffeeCommunity/boston-code-and-coffee/issues/22) Add and Populate the "About Section"
+- [ISSUE-17](https://github.com/CodeandCoffeeCommunity/boston-code-and-coffee/issues/17) Add Social Media Buttons community
+
+### Updated
+- [ISSUE-23](https://github.com/CodeandCoffeeCommunity/boston-code-and-coffee/issues/23) Update the Organizers Page
+- [ISSUE-16](https://github.com/CodeandCoffeeCommunity/boston-code-and-coffee/issues/16) Update the 'Past Events' page (Frontend) 
+- [ISSUE-15](https://github.com/CodeandCoffeeCommunity/boston-code-and-coffee/issues/15) Update the 'Past Events' page (Backend) website 
+- [ISSUE-4](https://github.com/CodeandCoffeeCommunity/boston-code-and-coffee/issues/4) Update the CC Chapters page website team
+
+### Removed
+N/A
+
+---
+
 ## 1.0.7 - 2023-08-18
  
 ### Added
@@ -37,6 +54,7 @@ N/A
 ### Removed
 N/A
 
+---
 
 ## 1.0.6 - 2023-08-08
  
@@ -50,6 +68,7 @@ N/A
 ### Removed
 N/A
 
+---
 
 ## 1.0.5 - 2023-08-03
  
@@ -81,6 +100,8 @@ N/A
 - Updated About Main Page to include subpages
 - Updated root layout to use fragment instead of div
 - Change the color of the About button on the home page
+
+---
 
 ## 1.0.4 - 2023-07-28
  
@@ -160,5 +181,6 @@ N/A
 
 <!-- Add the links to released versions below and update the Unreleased link above accordingly. -->
 
+[1.1.0]: https://github.com/CodeandCoffeeCommunity/boston-code-and-coffee/compare/v1.0.0...v1.1.0
 [1.0.0]: https://github.com/CodeandCoffeeCommunity/boston-code-and-coffee/compare/v0.1.0...v1.0.0
 [0.1.0]: https://github.com/CodeandCoffeeCommunity/boston-code-and-coffee/releases/tag/v0.1.0
