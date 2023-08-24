@@ -24,6 +24,13 @@ N/A
 
 ---
 
+## [1.1.1] - 2023-08-24
+### Updated
+- Updated Nicole Lyu's picture in Organizers page
+
+
+
+
 ## [1.1.0] - 2023-08-20
  
 ### Added
