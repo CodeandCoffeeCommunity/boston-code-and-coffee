@@ -98,7 +98,7 @@ const team = [
     // teamLead: 'Team Lead:',
     team: 'Social Media',
     imageUrl:
-      "https://media.licdn.com/dms/image/C4E03AQG7_VeBySraNQ/profile-displayphoto-shrink_200_200/0/1661273766047?e=1695254400&v=beta&t=udWGSp3_7cOzvYqcelI1-yOPAom2MaO-20B591E9qeI"
+      "https://media.licdn.com/dms/image/D5603AQHCSgPsJzXklg/profile-displayphoto-shrink_200_200/0/1691679645025?e=1698278400&v=beta&t=3h8qyd9yj2wpiCtnIlAwKUPoGsRUgVrD28FzQI2BzfA"
   },
   {
     name: "Sergio Terrero",
