@@ -17,19 +17,22 @@ export default function EventAlbum({ pastEvents }: any) {
         let date = parseDate(meetupEvent.dateTime.split("T")[0]);                   
         
         return (
-          <Link key={meetupEvent.id} href='/pastEvents/[eventId]/photoAlbum' as={`/pastEvents/${meetupEvent.id}/photoAlbum?photoCount=${meetupEvent.photoAlbum?.photoCount}`} className="flex w-1/2 px-4 pb-8 flex-wrap">          
-            <div className="relative text-center">
-              
+          <Link key={meetupEvent.id} 
+          href='/pastEvents/[eventId]/photoAlbum' 
+          as={`/pastEvents/${meetupEvent.id}/photoAlbum?photoCount=${meetupEvent.photoAlbum?.photoCount}`} 
+          className="flex w-1/2 px-4 pb-8 flex-wrap">
+            <div className="relative text-center">              
               <img
                 src={`${meetupEvent.image?.baseUrl}${meetupEvent.image?.id}/676x380.jpg`}
                 className="block rounded-xl object-center object-cover w-full h-full aspect-square"
                 alt=""
               />
-
-              <h1 className={`font-bold absolute text-2xl text-white w-full top-1/2 -translate-y-1/2`}>
+              <h1 className={`font-bold absolute drop-shadow-md text-2xl text-white w-full top-1/2 -translate-y-1/2`}>
                 {`${date.month} ${date.day}, ${date.year}`}
-              </h1>              
-
+              </h1>                            
+              <h1 className={`font-bold absolute drop-shadow-md text-2xl text-white w-full top-1/2 translate-y-1/4`}>
+                  {`${meetupEvent.photoAlbum?.photoCount}`} photo(s)
+              </h1>
             </div>        
           </Link>
         );
