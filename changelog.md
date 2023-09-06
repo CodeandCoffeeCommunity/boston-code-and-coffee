@@ -23,6 +23,16 @@ N/A
 -->
 
 ---
+## [1.1.0] - 2023-09-06
+ 
+### Added
+- Added transparent shadows to EventAlbum text
+- Clicking on gallery image now opens it in full-screen
+
+### Updated
+- Cover image for EventAlbum is now takem from the Photo album instead of the poster
+- For events with only cover images, stock image is chosen as the cover
+
 
 ## [1.1.1] - 2023-08-24
 ### Updated
