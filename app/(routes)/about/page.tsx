@@ -11,8 +11,8 @@ const buttons = [
   },
   {
     id: 2,
-    title: "Community Principals",
-    link: "/about/principals",
+    title: "Community Principles",
+    link: "/about/principles",
     color: "bg-green-600",
   },
   {

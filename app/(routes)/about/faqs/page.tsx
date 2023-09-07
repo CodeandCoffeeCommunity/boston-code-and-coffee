@@ -14,7 +14,7 @@ export default function AboutFaQs() {
         </p>
         <p className="py-4">You can also volunteer to host a feature.</p>
         <Button
-          title={"Feature Sign Up Page"}
+          title={"Features"}
           link={"/features"}
           color={"bg-yellow-400"}
           size={"small"}

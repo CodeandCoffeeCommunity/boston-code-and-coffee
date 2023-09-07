@@ -7,7 +7,7 @@ import LinkedIn from "@/assets/images/LinkedIn.svg";
 const buttons = [
   {
     id: 1,
-    title: "Feature Sign Up",
+    title: "Features",
     link: "/features",
     color: "bg-yellow-400",
   },

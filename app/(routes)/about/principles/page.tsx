@@ -1,10 +1,10 @@
 import Link from "next/link";
 
-export default function AboutPrincipals() {
+export default function AboutPrinciples() {
   return (
     <div className="px-7">
       <h4 className="text-xl pb-4 font-bold leading-none tracking-tight text-gray-900">
-        Our Community Principals
+        Our Community Principles
       </h4>
       <h5 className="text-base font-bold leading-none tracking-tight text-gray-900">
         Belonging
@@ -12,7 +12,7 @@ export default function AboutPrincipals() {
         <p>
           We strive for everyone to feel welcomed, valued, and connected.
           We believe in encouraging belonging through conscious diversity and inclusion, 
-          especially amongst underrepresented groups in tech. Check out our <span className="font-bold">organizers</span> page!
+          especially amongst underrepresented groups in tech. Check out our <Link href={"/organizers"} className="font-bold underline">organizers</Link> page!
         </p>
       <h5 className="text-base pt-4 font-bold leading-none tracking-tight text-gray-900">
         Safety

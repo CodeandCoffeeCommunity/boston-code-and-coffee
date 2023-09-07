@@ -23,6 +23,11 @@ N/A
 -->
 
 ---
+## [1.2] - 2023-09-07
+### Updated
+- Corrected the typographical error in the word "Principles."
+- Included a hyperlink to the Organizers page where it mentions "Check out our organizers page!"
+- Updated the text of the "Feature Sign Up Page" button to just "Features"
 
 ## [1.1.1] - 2023-08-24
 ### Updated
