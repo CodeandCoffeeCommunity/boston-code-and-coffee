@@ -153,15 +153,15 @@ const team = [
     imageUrl:
       "https://media.licdn.com/dms/image/D4E03AQEeqg9cDqm9gg/profile-displayphoto-shrink_800_800/0/1667252731966?e=1699488000&v=beta&t=NWuVkDGLA1d81WnIQabtPBTrRPiMQoJ7rWPJ_qUiPMU"
   },
-  {
-    name: "Anmol Vijay Bhatia",
-    role: "Organizer",
-    linkedinUrl: "https://www.linkedin.com/in/anmol-vb/",
-    // teamLead: 'Team Lead:',
-    team: '',
-    imageUrl:
-      "https://media.licdn.com/dms/image/C5603AQGIMDZ25uvPqQ/profile-displayphoto-shrink_800_800/0/1658655544904?e=1699488000&v=beta&t=YvEoffE9F8jPxXDWgi8rhgLGH9j88cunH_b2ud8Jc0g"
-  },
+  // {
+  //   name: "Anmol Vijay Bhatia",
+  //   role: "Organizer",
+  //   linkedinUrl: "https://www.linkedin.com/in/anmol-vb/",
+  //   // teamLead: 'Team Lead:',
+  //   team: '',
+  //   imageUrl:
+  //     "https://media.licdn.com/dms/image/C5603AQGIMDZ25uvPqQ/profile-displayphoto-shrink_800_800/0/1658655544904?e=1699488000&v=beta&t=YvEoffE9F8jPxXDWgi8rhgLGH9j88cunH_b2ud8Jc0g"
+  // },
 
 
 
