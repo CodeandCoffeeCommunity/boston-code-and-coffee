@@ -24,11 +24,28 @@ N/A
 
 ---
 
+## [1.1.2] - 2023-09-08
+ 
+### Added
+- Added 3 new team members
+- Linked the new components in pastEvents pages
+
+### Updated
+- Updated Anton's and Brian's pictures in Organizers page
+- Updated everyone's roles to reflect the new structure
+- Updated the variables to reflect the new roles
+
+### Removed
+- Removed David Venegas
+- Removed h2 'Meet Our Volunteers!' 
+---
+
+
 ## [1.1.1] - 2023-08-24
 ### Updated
 - Updated Nicole Lyu's picture in Organizers page
 
-
+---
 
 
 ## [1.1.0] - 2023-08-20

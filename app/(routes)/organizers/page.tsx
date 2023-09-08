@@ -3,43 +3,25 @@ import Wrapper from "@/components/layout/Wrapper";
 
 const team = [
   {
-    name: "Daniel Kapper",
-    role: "Co-Organizer",
-    linkedinUrl: "https://www.linkedin.com/in/kapper/",
-    // teamLead: 'Team Lead:',
-    imageUrl:
-      "https://res.cloudinary.com/danielkapper-com/image/upload/v1584983915/49256474_10218714097030554_1619941130089005056_o.jpg_szwvwp.jpg",
-  },
-  {
     name: "Brian Towne",
-    role: "Co-Organizer",
+    role: "Lead Organizer",
     linkedinUrl: "https://www.linkedin.com/in/bjtowne/",
     // teamLead: 'Team Lead:',
-
     imageUrl:
-      "https://media.licdn.com/dms/image/C5603AQF4XNgseUCHyQ/profile-displayphoto-shrink_400_400/0/1655003018441?e=1694044800&v=beta&t=PCruuX2t6f9IkQ92e_z-OdSDIR2Qpf5WOuM7eOQ7KbM"
+      "https://media.licdn.com/dms/image/C5603AQF4XNgseUCHyQ/profile-displayphoto-shrink_800_800/0/1655003018852?e=1699488000&v=beta&t=EnLoh_sc-INR88zIc_QUr-7dFqdAb840JFaU1_WxBCE"
   },
   {
     name: "Anton Shelkovnikov",
-    role: "Co-Organizer",
+    role: "Lead Organizer",
     linkedinUrl: "https://www.linkedin.com/in/antonxdev/",
     // teamLead: 'Team Lead:',
     team: 'Volunteer Onboarding',
     imageUrl:
-      "https://media.licdn.com/dms/image/C4E03AQHKGkWJ9knk4A/profile-displayphoto-shrink_400_400/0/1652227805550?e=1694044800&v=beta&t=FxfNvYBDkdkeTIl2SlBYJK4UWvhcY3GWBrzxbA64hsE"
-  },
-  {
-    name: "Alex Pereira",
-    role: "Volunteer",
-    linkedinUrl: "https://www.linkedin.com/in/alexpereira7/",
-    // teamLead: 'Team Lead:',
-    team: 'Website',
-    imageUrl:
-      "https://media.licdn.com/dms/image/C4D03AQEQyicXIvVy7A/profile-displayphoto-shrink_200_200/0/1598730872972?e=1695254400&v=beta&t=ahPUkwrpSxlZJVKnDH-zfXAN_ckCHuIMrGDq9dPlD5Y"
+      "https://media.licdn.com/dms/image/C4E03AQHKGkWJ9knk4A/profile-displayphoto-shrink_800_800/0/1652227806029?e=1699488000&v=beta&t=yAWRW-XZhid1AuA7XwFxWJ8E5BuczH0uzI_hpL7XLTw"
   },
   {
     name: "Cedric Jean-Philippe",
-    role: "Volunteer",
+    role: "Lead Organizer",
     linkedinUrl: "https://www.linkedin.com/in/cedric-jean-philippe/",
     // teamLead: 'Team Lead:',
     team: 'Website',
@@ -47,17 +29,25 @@ const team = [
       "https://media.discordapp.net/attachments/1129423864502427748/1137149639762657321/IMG_8182.jpg"
   },
   {
-    name: "David Venegas",
-    role: "Volunteer",
-    linkedinUrl: "https://www.linkedin.com/in/david-venegas-m/",
+    name: "Alex Pereira",
+    role: "Organizer",
+    linkedinUrl: "https://www.linkedin.com/in/alexpereira7/",
     // teamLead: 'Team Lead:',
-    team: '',
+    team: 'Website',
     imageUrl:
-      "https://media.licdn.com/dms/image/D4E03AQFads4XHD4SUw/profile-displayphoto-shrink_200_200/0/1688920899517?e=1695254400&v=beta&t=uzUkKWBZnDz1f86sIkYN_9VRAXaXWP4gHTyV1miJKNU"
+      "https://media.licdn.com/dms/image/C4D03AQEQyicXIvVy7A/profile-displayphoto-shrink_200_200/0/1598730872972?e=1695254400&v=beta&t=ahPUkwrpSxlZJVKnDH-zfXAN_ckCHuIMrGDq9dPlD5Y"
+  },
+  {
+    name: "Daniel Kapper",
+    role: "Organizer",
+    linkedinUrl: "https://www.linkedin.com/in/kapper/",
+    // teamLead: 'Team Lead:',
+    imageUrl:
+      "https://res.cloudinary.com/danielkapper-com/image/upload/v1584983915/49256474_10218714097030554_1619941130089005056_o.jpg_szwvwp.jpg",
   },
   {
     name: "Dhruv Parthasarathy",
-    role: "Volunteer",
+    role: "Organizer",
     linkedinUrl: "https://www.linkedin.com/in/parthasarathydhruv/",
     // teamLead: 'Team Lead:',
     team: '',
@@ -66,7 +56,7 @@ const team = [
   },
   {
     name: "Hitomi Abiko",
-    role: "Volunteer",
+    role: "Organizer",
     linkedinUrl: "https://www.linkedin.com/in/hitomiabiko/",
     // teamLead: 'Team Lead:',
     team: '',
@@ -75,7 +65,7 @@ const team = [
   },
   {
     name: "Jarrod Kohl",
-    role: "Volunteer",
+    role: "Organizer",
     linkedinUrl: "https://www.linkedin.com/in/jarrodkohl/",
     // teamLead: 'Team Lead:',
     team: 'Features',
@@ -84,7 +74,7 @@ const team = [
   },
   {
     name: "Jingying Huang",
-    role: "Volunteer",
+    role: "Organizer",
     linkedinUrl: "https://www.linkedin.com/in/jingyinghuang/",
     // teamLead: 'Team Lead:',
     team: 'Social Media',
@@ -93,7 +83,7 @@ const team = [
   },
   {
     name: "Nicole Lyu",
-    role: "Volunteer",
+    role: "Organizer",
     linkedinUrl: "https://www.linkedin.com/in/nicole-lyu/",
     // teamLead: 'Team Lead:',
     team: 'Social Media',
@@ -102,7 +92,7 @@ const team = [
   },
   {
     name: "Sergio Terrero",
-    role: "Volunteer",
+    role: "Organizer",
     linkedinUrl: "https://www.linkedin.com/in/sergio-terrero-34045a11b/",
     // teamLead: 'Team Lead:',
     team: '',
@@ -111,7 +101,7 @@ const team = [
   },
   {
     name: "Shirly Spikes",
-    role: "Volunteer",
+    role: "Organizer",
     linkedinUrl: "https://www.linkedin.com/in/shirly-spikes-725a413b/",
     // teamLead: 'Team Lead:',
     team: 'Features',
@@ -120,7 +110,7 @@ const team = [
   },
   {
     name: "Sai Dutt",
-    role: "Volunteer",
+    role: "Organizer",
     linkedinUrl: "https://www.linkedin.com/in/dutt-sai/",
     // teamLead: 'Team Lead:',
     team: '',
@@ -129,7 +119,7 @@ const team = [
   },
   {
     name: "Sean Daly",
-    role: "Volunteer",
+    role: "Organizer",
     linkedinUrl: "https://www.linkedin.com/in/seancdaly/",
     // teamLead: 'Team Lead:',
     team: '',
@@ -138,12 +128,39 @@ const team = [
   },
   {
     name: "Claudio Olmedo",
-    role: "Volunteer",
+    role: "Organizer",
     linkedinUrl: "https://www.linkedin.com/in/claudioolmedo-com/",
     // teamLead: 'Team Lead:',
     team: '',
     imageUrl:
       "https://media.licdn.com/dms/image/D4E03AQE6q5fDJj5zcA/profile-displayphoto-shrink_200_200/0/1685118707659?e=1695254400&v=beta&t=MTVN3lH51OFLr27bpGGep401OW3RffbA8vNeANqZGZY"
+  },
+  {
+    name: "Benjamin Chen",
+    role: "Organizer",
+    linkedinUrl: "https://www.linkedin.com/in/benjamin-chen-a7a12750/",
+    // teamLead: 'Team Lead:',
+    team: '',
+    imageUrl:
+      "https://media.licdn.com/dms/image/C4D03AQEdG-JySQY0FQ/profile-displayphoto-shrink_800_800/0/1593446721248?e=1699488000&v=beta&t=eXADY-r2VoqqJL0cEA3KwsEj7-k2GMYATsEfDbsrhGI"
+  },
+  {
+    name: "Anirban Dutta",
+    role: "Organizer",
+    linkedinUrl: "https://www.linkedin.com/in/anirbandutta7/",
+    // teamLead: 'Team Lead:',
+    team: '',
+    imageUrl:
+      "https://media.licdn.com/dms/image/D4E03AQEeqg9cDqm9gg/profile-displayphoto-shrink_800_800/0/1667252731966?e=1699488000&v=beta&t=NWuVkDGLA1d81WnIQabtPBTrRPiMQoJ7rWPJ_qUiPMU"
+  },
+  {
+    name: "Anmol Vijay Bhatia",
+    role: "Organizer",
+    linkedinUrl: "https://www.linkedin.com/in/anmol-vb/",
+    // teamLead: 'Team Lead:',
+    team: '',
+    imageUrl:
+      "https://media.licdn.com/dms/image/C5603AQGIMDZ25uvPqQ/profile-displayphoto-shrink_800_800/0/1658655544904?e=1699488000&v=beta&t=YvEoffE9F8jPxXDWgi8rhgLGH9j88cunH_b2ud8Jc0g"
   },
 
 
@@ -151,8 +168,8 @@ const team = [
 ];
 
 export default function Organizers() {
-  const organizers = team.filter(person => person.role === 'Co-Organizer');
-  const volunteers = team.filter(person => person.role !== 'Co-Organizer');
+  const leadOrganizers = team.filter(person => person.role === 'Lead Organizer');
+  const organizers = team.filter(person => person.role !== 'Lead Organizer');
 
   return (
     <Wrapper title="" description="">
@@ -160,7 +177,7 @@ export default function Organizers() {
       <ul
         className="grid grid-cols-2 md:grid-cols-3 gap-2 justify-center flex-auto mt-10 text-center"
       >
-        {organizers.map(({ name, imageUrl, team, role, linkedinUrl }) => (
+        {leadOrganizers.map(({ name, imageUrl, team, role, linkedinUrl }) => (
           <li key={name} className="m-4">
             <a href={linkedinUrl}>
               <img
@@ -181,11 +198,11 @@ export default function Organizers() {
 
 
 
-      <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl "> Meet Our Volunteers!</h2>
+      {/* <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl "> Meet Our Volunteers!</h2> */}
       <ul
         className="grid grid-cols-2 md:grid-cols-3 gap-2 justify-center flex-auto mt-10 text-center"
       >
-        {volunteers.map(({ name, imageUrl, team, role, linkedinUrl }) => (
+        {organizers.map(({ name, imageUrl, team, role, linkedinUrl }) => (
           <li key={name} className="m-4">
             <a href={linkedinUrl}>
               <img
