@@ -24,12 +24,15 @@ N/A
 
 ---
 
+## [1.1.2] - 2023-09-16
+### Added
+- New Feedback button and Social media buttons for X and Meetup
+### Updated
+- Reordered main page buttons 
+
 ## [1.1.1] - 2023-08-24
 ### Updated
 - Updated Nicole Lyu's picture in Organizers page
-
-
-
 
 ## [1.1.0] - 2023-08-20
  
