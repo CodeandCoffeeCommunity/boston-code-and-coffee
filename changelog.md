@@ -23,6 +23,9 @@ N/A
 -->
 
 ---
+## [1.1.3] - 2023-10-09
+### Added
+- Instructions in README to install Next.js
 
 ## [1.1.2] - 2023-09-16
 ### Added
