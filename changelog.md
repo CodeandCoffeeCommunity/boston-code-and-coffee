@@ -21,6 +21,22 @@ N/A
 N/A
 
 -->
+---
+
+## [1.1.3] - 2023-10-24
+ 
+### Added
+- Added .env file with Notion API key and Notion database key variables
+- Added .env file to gitignore file
+- Added fetchDataFromNotion async function to get the data from Notion and sort the array
+
+
+### Updated
+- Updated Organizers function
+
+
+### Removed
+- removed the hardcoded array of team members
 
 ---
 
