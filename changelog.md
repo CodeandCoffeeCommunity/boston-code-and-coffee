@@ -27,7 +27,7 @@ N/A
 ## [1.1.2] - 2023-09-08
  
 ### Added
-- Added 3 new team members
+- Added 2 new team members
 - Linked the new components in pastEvents pages
 
 ### Updated
