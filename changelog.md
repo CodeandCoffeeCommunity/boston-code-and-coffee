@@ -55,14 +55,20 @@ N/A
 - Removed David Venegas
 - Removed h2 'Meet Our Volunteers!' 
 ---
+## [1.1.3] - 2023-10-09
+### Added
+- Instructions in README to install Next.js
+
+## [1.1.2] - 2023-09-16
+### Added
+- New Feedback button and Social media buttons for X and Meetup
+### Updated
+- Reordered main page buttons 
 
 
 ## [1.1.1] - 2023-08-24
 ### Updated
 - Updated Nicole Lyu's picture in Organizers page
-
----
-
 
 ## [1.1.0] - 2023-08-20
  

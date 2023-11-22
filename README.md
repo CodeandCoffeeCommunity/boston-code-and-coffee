@@ -3,6 +3,7 @@
 First, run the development server:
 
 ```bash
+npm i next
 npm run dev
 ```
 Create an .env file and add these variables:
