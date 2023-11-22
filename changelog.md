@@ -21,7 +21,39 @@ N/A
 N/A
 
 -->
+---
 
+## [1.1.3] - 2023-10-24
+ 
+### Added
+- Added .env file with Notion API key and Notion database key variables
+- Added .env file to gitignore file
+- Added fetchDataFromNotion async function to get the data from Notion and sort the array to the separate file at /app/service/notion/NotionService
+
+
+### Updated
+- Updated Organizers function
+
+
+### Removed
+- removed the hardcoded array of team members
+
+---
+
+## [1.1.2] - 2023-09-08
+ 
+### Added
+- Added 2 new team members
+- Linked the new components in pastEvents pages
+
+### Updated
+- Updated Anton's and Brian's pictures in Organizers page
+- Updated everyone's roles to reflect the new structure
+- Updated the variables to reflect the new roles
+
+### Removed
+- Removed David Venegas
+- Removed h2 'Meet Our Volunteers!' 
 ---
 ## [1.1.3] - 2023-10-09
 ### Added
@@ -32,6 +64,7 @@ N/A
 - New Feedback button and Social media buttons for X and Meetup
 ### Updated
 - Reordered main page buttons 
+
 
 ## [1.1.1] - 2023-08-24
 ### Updated
