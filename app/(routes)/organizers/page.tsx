@@ -16,7 +16,7 @@ export default async function Organizers() {
       <ul
         className="grid grid-cols-2 md:grid-cols-3 gap-2 justify-center flex-auto mt-10 text-center"
       >
-        {teamMembers.map(({ name, imageUrl, team, role, linkedInUrl }) => (
+        {teamMembers.map(({ name, imageUrl, role, linkedInUrl }) => (
           <li key={name} className="m-4">
             <a href={linkedInUrl}>
               <img
@@ -29,7 +29,6 @@ export default async function Organizers() {
               {name}
             </h3>
             <p className="text-sm leading-6 text-gray-600">{role}</p>
-            <p className="text-sm leading-6 text-gray-600">{team}</p>
           </li>
         ))}
       </ul>
