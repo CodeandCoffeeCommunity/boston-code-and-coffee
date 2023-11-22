@@ -1,4 +1,3 @@
-
 import "@/app/globals.css";
 import Wrapper from "@/components/layout/Wrapper";
 
@@ -35,4 +34,3 @@ export default async function Organizers() {
     </Wrapper>
   );
 }
-
