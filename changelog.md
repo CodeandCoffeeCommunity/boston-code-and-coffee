@@ -28,7 +28,7 @@ N/A
 ### Added
 - Added .env file with Notion API key and Notion database key variables
 - Added .env file to gitignore file
-- Added fetchDataFromNotion async function to get the data from Notion and sort the array to the separate file at "@/app/service/notion/NotionService
+- Added fetchDataFromNotion async function to get the data from Notion and sort the array to the separate file at /app/service/notion/NotionService
 
 
 ### Updated
