@@ -6,7 +6,7 @@ const notion = new Client({ auth: process.env.NOTION_API_KEY });
 // this function fetches data from The Notion Database(Table). 
 const fetchDataFromNotion = async () => {
     const databaseId = process.env.NOTION_API_DATABASE;
-    const response = await notion.databases.query({ database_id: databaseId });
+    const response = await notion.databases.query({ database_id: databaseId! });
 
     // we map through the array of object to pull out the properties that we need for rendering.
     const teamResults = response.results.map((page) => {
