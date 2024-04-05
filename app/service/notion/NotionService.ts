@@ -1,12 +1,21 @@
 import { Client } from "@notionhq/client";
 
+import { configuration } from "@/app/constants/Configuration";
 import PLACEHOLDER_IMAGE from '@/assets/images/placeholder-avatar.png';
-const notion = new Client({ auth: process.env.NOTION_API_KEY });
+import { QueryDatabaseResponse } from "@notionhq/client/build/src/api-endpoints";
+
+const notion = new Client({ auth: configuration.NOTION_API_KEY });
 
 // this function fetches data from The Notion Database(Table). 
 const fetchDataFromNotion = async () => {
     const databaseId = process.env.NOTION_API_DATABASE;
-    const response = await notion.databases.query({ database_id: databaseId! });
+
+    let response: QueryDatabaseResponse;
+    try {
+        response = await notion.databases.query({ database_id: databaseId! });
+    } catch (error) {
+        return [];
+    }
 
     // we map through the array of object to pull out the properties that we need for rendering.
     const teamResults = response.results.map((page: any) => {
