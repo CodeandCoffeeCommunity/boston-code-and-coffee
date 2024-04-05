@@ -3,13 +3,15 @@ import Link from "next/link";
 import Image from "next/image";
 import Discord from "@/assets/images/Discord.svg";
 import LinkedIn from "@/assets/images/LinkedIn.svg";
+import X from "@/assets/images/x.svg";
+import Meetup from "@/assets/images/meetup.svg";
 
 const buttons = [
   {
     id: 1,
-    title: "Feature Sign Up",
-    link: "/features",
-    color: "bg-yellow-400",
+    title: "About",
+    link: "/about",
+    color: "bg-[#EA891D]",
   },
   {
     id: 2,
@@ -19,21 +21,27 @@ const buttons = [
   },
   {
     id: 3,
-    title: "Code & Coffee Chapters",
+    title: "Chapters",
     link: "/chapters",
     color: "bg-rose-600",
   },
   {
     id: 4,
-    title: "Photos from past events",
+    title: "Photos",
     link: "/pastEvents",
     color: "bg-cyan-500",
   },
   {
     id: 5,
-    title: "About",
-    link: "/about",
-    color: "bg-[#EA891D]",
+    title: "Features",
+    link: "/features",
+    color: "bg-yellow-400",
+  },
+  {
+    id: 6,
+    title: "Feedback",
+    link: "/#",
+    color: "bg-[#A73C93]",
   },
 ];
 
@@ -49,6 +57,18 @@ const social_media = [
     title: "LinkedIn",
     link: "https://www.linkedin.com/company/boston-code-and-coffee",
     image: LinkedIn,
+  },
+  {
+    id : 3,
+    title: "X",
+    link: "/#",
+    image: X,
+  },
+  {
+    id : 4,
+    title: "Meetup",
+    link: "https://www.meetup.com/boston-code-and-coffee/",
+    image: Meetup,
   },
 ];
 

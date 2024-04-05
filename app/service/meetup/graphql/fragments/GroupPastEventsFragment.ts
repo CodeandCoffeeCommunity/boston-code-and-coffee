@@ -1,7 +1,7 @@
 const GroupPastEventsFragment = `
   fragment GroupPastEventsFragment on Group {
     id
-    pastEvents (input: { last: 100 }) {
+    pastEvents (input: { first: 100 }) {
       edges { 
         node { 
           id
