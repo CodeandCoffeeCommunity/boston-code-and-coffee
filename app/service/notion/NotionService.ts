@@ -9,11 +9,11 @@ const fetchDataFromNotion = async () => {
     const response = await notion.databases.query({ database_id: databaseId! });
 
     // we map through the array of object to pull out the properties that we need for rendering.
-    const teamResults = response.results.map((page) => {
+    const teamResults = response.results.map((page: any) => {
         return {
             id: page.id,
             name: page.properties.Name.title[0]?.plain_text,
-            role: page.properties.Role.multi_select.map(role => role.name).toString(),
+            role: page.properties.Role.multi_select.map((role: any) => role.name).toString(),
             // team: page.properties.Teams.rich_text[0]?.plain_text,
             imageUrl: page.properties.Image.files[0]?.file.url || PLACEHOLDER_IMAGE.src,
             linkedInUrl: page.properties.LinkedIn.rich_text[0]?.plain_text,
