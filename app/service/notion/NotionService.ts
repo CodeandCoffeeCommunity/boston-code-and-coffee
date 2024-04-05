@@ -5,11 +5,10 @@ import PLACEHOLDER_IMAGE from '@/assets/images/placeholder-avatar.png';
 import { QueryDatabaseResponse } from "@notionhq/client/build/src/api-endpoints";
 
 const notion = new Client({ auth: configuration.NOTION_API_KEY });
+const databaseId = configuration.NOTION_API_DATABASE;
 
 // this function fetches data from The Notion Database(Table). 
 const fetchDataFromNotion = async () => {
-    const databaseId = process.env.NOTION_API_DATABASE;
-
     let response: QueryDatabaseResponse;
     try {
         response = await notion.databases.query({ database_id: databaseId! });
