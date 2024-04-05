@@ -23,6 +23,18 @@ N/A
 -->
 ---
 
+## [1.1.3] - 2024-04-04
+ 
+### Added
+N/A
+
+### Updated
+- Updated organizer's API
+
+### Removed
+N/A
+
+---
 ## [1.1.3] - 2023-10-24
  
 ### Added
