@@ -1,12 +1,9 @@
-
+import Image from "next/image";
 import "@/app/globals.css";
+
 import Wrapper from "@/components/layout/Wrapper";
 
-//import the function that fetches data from Notion
 import fetchDataFromNotion from "@/app/service/notion/NotionService"
-
-
-
 
 export default async function Organizers() {
   const teamMembers = await fetchDataFromNotion()
@@ -16,9 +13,10 @@ export default async function Organizers() {
       <ul
         className="grid grid-cols-2 md:grid-cols-3 gap-2 justify-center flex-auto mt-10 text-center"
       >
-        {teamMembers.map(({ name, imageUrl, team, role, linkedInUrl }) => (
+        {teamMembers.map(({ name, imageUrl, role, linkedInUrl }) => (
           <li key={name} className="m-4">
             <a href={linkedInUrl}>
+              {/* eslint-disable-next-line */}
               <img
                 className="mx-auto h-24 w-24 rounded-full"
                 src={imageUrl}
@@ -29,7 +27,6 @@ export default async function Organizers() {
               {name}
             </h3>
             <p className="text-sm leading-6 text-gray-600">{role}</p>
-            <p className="text-sm leading-6 text-gray-600">{team}</p>
           </li>
         ))}
       </ul>
