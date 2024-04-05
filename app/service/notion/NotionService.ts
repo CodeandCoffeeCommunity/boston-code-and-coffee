@@ -1,5 +1,6 @@
 import { Client } from "@notionhq/client";
 
+import PLACEHOLDER_IMAGE from '@/assets/images/placeholder-avatar.png';
 const notion = new Client({ auth: process.env.NOTION_API_KEY });
 
 // this function fetches data from The Notion Database(Table). 
@@ -12,9 +13,9 @@ const fetchDataFromNotion = async () => {
         return {
             id: page.id,
             name: page.properties.Name.title[0]?.plain_text,
-            role: page.properties.Role.multi_select[0].name,
+            role: page.properties.Role.multi_select.map(role => role.name).toString(),
             // team: page.properties.Teams.rich_text[0]?.plain_text,
-            imageUrl: page.properties.Image.files[0]?.file.url,
+            imageUrl: page.properties.Image.files[0]?.file.url || PLACEHOLDER_IMAGE.src,
             linkedInUrl: page.properties.LinkedIn.rich_text[0]?.plain_text,
             notionId: page.properties.NotionId.rich_text[0]?.plain_text
         };
