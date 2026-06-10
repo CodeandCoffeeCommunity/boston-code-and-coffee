@@ -2,7 +2,7 @@ import "@/app/globals.css";
 import Wrapper from "@/components/layout/Wrapper";
 import Button from "@/components/shared/Button";
 
-const googleFormLink = 'https://docs.google.com/forms/d/1kFX40O9xX-OHcRWtk29KzVaqVaq1hoFfDr9kuLAidZA';
+const tallyFormLink = 'https://tally.so/r/w8aj9P';
 
 export default function FeatureSignUp() {
   return (
@@ -29,7 +29,7 @@ export default function FeatureSignUp() {
 
       <Button 
         title={'Host a feature!'}
-        link={googleFormLink}
+        link={tallyFormLink}
         color={'bg-yellow-400'}
         size='small'
         />
